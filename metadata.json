@@ -1,0 +1,6 @@
+{
+  "name": "AI Literacy: รู้ทัน AI ใช้เป็น คิดอย่างรับผิดชอบ",
+  "description": "แอปพลิเคชันการเรียนรู้เรื่องความฉลาดรู้ด้านปัญญาประดิษฐ์ (AI Literacy) ตามแนวทาง BDI สำหรับประชาชนทุกช่วงวัย",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

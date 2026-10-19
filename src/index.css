@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-deep-purple: #5B3FD6;
+    --color-electric-blue: #3478F6;
+    --color-light-lavender: #F1EDFF;
+    --color-pale-blue: #EAF3FF;
+    --color-dark-navy: #172554;
+    --color-success-green: #22A06B;
+    --color-warning-amber: #F5A623;
+  }
+
+  body {
+    font-family: 'Prompt', 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Accessibility font size modifiers */
+body.font-size-normal {
+  font-size: 16px;
+}
+
+body.font-size-large {
+  font-size: 18px;
+}
+
+body.font-size-xlarge {
+  font-size: 20px;
+}
+
+/* Custom scrollbar for modern e-learning */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
