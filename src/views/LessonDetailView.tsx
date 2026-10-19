@@ -33,13 +33,14 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({ moduleId, on
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [isAnswerSubmitted, setIsAnswerSubmitted] = useState<boolean>(false);
 
-  // Scroll to top on module change
+  // Reset checkpoint state and scroll to top only when switching module
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
     setSelectedAnswer(null);
     setIsAnswerSubmitted(false);
     setCurrentModuleId(moduleId);
-  }, [moduleId, setCurrentModuleId]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [moduleId]);
 
   const handleMarkCompleted = () => {
     completeModule(moduleItem.id);

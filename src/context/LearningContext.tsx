@@ -114,7 +114,10 @@ export const LearningProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const setCurrentModuleId = (moduleId: number) => {
-    setProgress((prev) => ({ ...prev, currentModuleId: moduleId }));
+    setProgress((prev) => {
+      if (prev.currentModuleId === moduleId) return prev;
+      return { ...prev, currentModuleId: moduleId };
+    });
   };
 
   const recordQuizResult = (result: QuizResult) => {

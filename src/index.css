@@ -11,8 +11,11 @@
     --color-warning-amber: #F5A623;
   }
 
-  body {
+  html, body {
     font-family: 'Prompt', 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100%;
   }
 }
 
